@@ -205,6 +205,7 @@ console.log(estado);
 */
 
 // TAREA DE CREAR COPIA
+/*
 const productoActualizado1 = {
     ...productos[3],
     precio: 350000,
@@ -215,3 +216,4 @@ console.log(`El producto el ${productos[3].nombre} cuesta $${productos[3].precio
 
 const estado = productoActualizado1.stock > 0 ? 'Producto en venta' : 'Producto agotado';
 console.log(estado);
+*/
