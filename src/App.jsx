@@ -14,10 +14,20 @@ return (
     <p>Productos disponibles: {disponibles.length}</p>
     <p>Valor del inventario: ${valorInventario}</p>
     <section className="productos">
+      <h2>Todos los Productos</h2>
       {productos.map(producto => (
         <ProductoCard 
           key={producto.id} 
           producto={producto}
+        />
+      ))}
+    </section>
+    <section className='productos'>
+      <h2>Productos Disponibles</h2>
+      {productos.filter(producto => producto.stock > 0).map(producto => (
+        <ProductoCard
+        key={producto.id}
+        producto={producto}
         />
       ))}
     </section>
