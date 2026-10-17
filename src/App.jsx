@@ -12,6 +12,7 @@ return (
   <main className="contenedor">
     <h1>Tienda tecnológica</h1>
     <p>Productos disponibles: {disponibles.length}</p>
+    <p>Existen Productos Agotados?: {productos.some(producto => producto.stock === 0) ? "Si" : "No"}`</p>
     <p>Valor del inventario: ${valorInventario}</p>
     <section className="productos">
       <h2>Todos los Productos</h2>
